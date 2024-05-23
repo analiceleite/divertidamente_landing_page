@@ -1,4 +1,4 @@
-<h1>EBAC Tech Talks</h1>
+<h1>Divertidamente - Landing Page</h1>
 
 ## Sobre o Projeto
 
