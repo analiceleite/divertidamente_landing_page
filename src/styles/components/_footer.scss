@@ -1,0 +1,52 @@
+@use "../variables";
+
+.footer-container {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: variables.$secondaryTextColor;
+  
+  .footer__section {
+    flex: 1; 
+    margin-right: 20px; 
+    
+    &:last-child {
+      margin-right: 0; 
+    }
+    
+    .footer__section__title {
+      font-size: 18px; 
+      color: variables.$titleColor; 
+      margin-bottom: 10px; 
+    }
+    
+    ul {
+      list-style-type: none; 
+      padding: 0;
+      
+      li {
+        margin-bottom: 5px; 
+        
+        a {
+          text-decoration: none;
+          color: variables.$linkColor; 
+          
+          &:hover {
+            color: variables.$linkHoverColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-copyright {
+  background-color: variables.$linkHoverColor; 
+  padding: 20px; 
+  text-align: center; 
+  
+  .footer__copyright__text {
+    color: variables.$textColor;
+  }
+}

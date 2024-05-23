@@ -1,0 +1,39 @@
+@use "../variables";
+
+.button {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    //* Indica se o elemento deve quebrar a linha
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); // Sombra padrão
+
+    &--primary {
+        color: variables.$textColor;
+        background-color: variables.$purple2;
+    }
+
+    &:hover {
+        background-color: variables.$hoverPurple;
+        transform: scale(1.1); // Aumenta o tamanho em 10%
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); // Sombra aumentada
+    }
+
+    //* Mobile
+    @media (max-width:640px) {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    //* Tablet
+    @media(max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
